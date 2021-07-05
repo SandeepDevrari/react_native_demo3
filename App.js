@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import AppLoading from 'expo-app-loading';
 import {getStyles, getFonts} from './styles/MainStyle'
-import { AppNavigator } from './route/RouteNavigation';
+import { AppDrawer } from './route/AppDrawer';
 
 export default function App() {
   const [isFontLoaded, setFontLoaded] = useState(false)
 
   if(isFontLoaded){
     return (
-      <AppNavigator />
+      <AppDrawer />
     );
   }else{
     return(
